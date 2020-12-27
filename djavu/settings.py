@@ -25,7 +25,7 @@ SECRET_KEY = ['*5i*nws1+=o3edr4-iukhvudxk-tiom#m#x&%8ac8gn7qo6($q']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['djavu.herokuapp.com', 'localhost', '']
 
 
 # Application definition
@@ -128,7 +128,7 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_STORAGE = 'whitenoise.django.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.django.CompressedStaticFilesStorage'
 
 CORS_ORIGIN_ALLOW_ALL = True
 
