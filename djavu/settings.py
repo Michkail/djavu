@@ -25,7 +25,7 @@ SECRET_KEY = ['*5i*nws1+=o3edr4-iukhvudxk-tiom#m#x&%8ac8gn7qo6($q']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['djavu.herokuapp.com', 'localhost', '']
+ALLOWED_HOSTS = ['djavu.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
+    'api',
 ]
 
 MIDDLEWARE = [
